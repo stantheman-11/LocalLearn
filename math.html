@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math — LocalLearn</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --accent: #2563eb; }
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <div class="hub-header">
+      <div class="container">
+        <a class="back-link" href="index.html">← All hubs</a>
+        <div class="hub-tag">Hub · Los Angeles</div>
+        <h1>Math</h1>
+        <p>Competitions, local programs, and books for teens who want to go deeper than the classroom.</p>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="container">
+
+        <!-- Where to Start -->
+        <div class="section">
+          <h2>Where to Start</h2>
+          <ul class="resource-list">
+
+            <li class="resource-item">
+              <strong>Khan Academy</strong>
+              <span>Free, self-paced courses covering everything from arithmetic to multivariable calculus. A reliable foundation for any level.</span>
+              <a href="https://www.khanacademy.org/math" target="_blank">khanacademy.org →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>Brilliant.org</strong>
+              <span>Interactive courses built around problem-solving rather than passive reading. Especially good for building mathematical intuition.</span>
+              <a href="https://brilliant.org" target="_blank">brilliant.org →</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Local Opportunities -->
+        <div class="section">
+          <h2>Local Opportunities</h2>
+          <ul class="resource-list">
+
+            <li class="resource-item">
+              <strong>UCLA Math Circle</strong>
+              <span>A math circle run out of UCLA where students tackle challenging, competition-style problems together. A great way to go beyond standard curriculum in a community setting.</span>
+            </li>
+
+            <li class="resource-item">
+              <strong>SMC Dual Enrollment</strong>
+              <span>Take actual college-level math courses at Santa Monica College while still in high school — one of the most cost-effective ways to get ahead.</span>
+              <a href="https://smccis.smc.edu/isisdoc/web_cat_sched_20262.html#ENVRN-32" target="_blank">View course catalog →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>SMC Summer Math Boot Camp</strong>
+              <span>An intensive summer program through Santa Monica College to strengthen math skills and get a head start on the coming year.</span>
+              <a href="https://www.smc.edu/student-support/academic-support/counseling/summer-programs.php" target="_blank">smc.edu/summer-programs →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>Mathnasium — Santa Monica</strong>
+              <span>A structured math learning center with a personalized approach. Good for building a solid foundation or working on specific gaps.</span>
+              <a href="https://www.mathnasium.com/math-centers/santamonica" target="_blank">mathnasium.com →</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Competitions -->
+        <div class="section">
+          <h2>Competitions</h2>
+          <ul class="resource-list">
+
+            <li class="resource-item">
+              <strong>AMC — American Mathematics Competition</strong>
+              <span>The MAA's flagship competition series, with separate exams for 8th grade (AMC 8), 10th grade (AMC 10), and 12th grade (AMC 12). A national benchmark and a great motivator for deeper study.</span>
+              <a href="https://maa.org/student-programs/amc" target="_blank">maa.org/amc →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>Purple Comet Math Meet</strong>
+              <span>A free, team-based online competition open to middle and high schoolers. Problems are challenging and collaborative — a fun way to compete without the pressure of individual testing.</span>
+              <a href="https://purplecomet.org" target="_blank">purplecomet.org →</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Books -->
+        <div class="section">
+          <h2>Books</h2>
+          <ul class="resource-list">
+
+            <li class="resource-item">
+              <strong>Art of Problem Solving Series</strong>
+              <span>A comprehensive curriculum spanning algebra, geometry, precalculus, calculus, and more — written specifically for students who want to go beyond the standard textbook. The gold standard for competition math preparation.</span>
+              <a href="https://artofproblemsolving.com/store/list/all-products" target="_blank">artofproblemsolving.com →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>Calculus — Michael Spivak</strong>
+              <span>Widely considered one of the finest calculus books ever written. Rigorous and demanding — best approached after a solid precalculus foundation. Treats calculus as mathematics, not just computation.</span>
+              <a href="https://www.amazon.com/Calculus-Michael-Spivak/dp/0521867444" target="_blank">View on Amazon →</a>
+            </li>
+
+            <li class="resource-item">
+              <strong>How to Solve It — George Pólya</strong>
+              <span>A short, legendary book on mathematical problem-solving strategy. Less about specific topics and more about how to think — useful at any level.</span>
+            </li>
+
+            <li class="resource-item">
+              <strong>The Art & Craft of Problem Solving — Paul Zeitz</strong>
+              <span>A deeper guide to mathematical problem-solving, bridging the gap between competition math and serious mathematical thinking.</span>
+            </li>
+
+            <li class="resource-item">
+              <strong>Geometry Revisited — Coxeter & Greitzer</strong>
+              <span>A beautiful treatment of classical geometry that reveals how much depth sits beneath familiar high school material. A favorite among competition mathematicians.</span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-section">
+      <div class="container">
+        <h2>Ask the Math Assistant</h2>
+        <p>Tell us where you are and what you're working toward — get recommendations for resources, competitions, or next steps.</p>
+
+        <div class="chat-window" id="chatWindow">
+          <div class="chat-message assistant">
+            Hi! I can help you find the right starting point, recommend books for your level, or point you toward local programs in LA. What are you working on?
+          </div>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="e.g. I want to prep for the AMC 10 but don't know where to start..."
+            autocomplete="off"
+          />
+          <button type="submit" id="sendBtn">Send</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
