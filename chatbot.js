@@ -1,7 +1,7 @@
 // ── Configuration ──────────────────────────────────────────────
 // Add your Anthropic API key here. For a real deployment, move this
 // to a backend so the key isn't exposed in the browser.
-const API_KEY = "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";
+const API_KEY = "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";
 
 // Each hub page sets window.HUB_PROMPT before this script loads
 const SYSTEM_PROMPT = window.HUB_PROMPT || "You are a helpful assistant for LocalLearn, a resource hub for teens in Los Angeles. Keep responses concise and friendly. Do not use any markdown formatting — no asterisks, no hyphens as bullet points, no headers, no bold or italic syntax. Write in plain prose only.";
