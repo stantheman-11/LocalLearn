@@ -3,17 +3,8 @@
 // to a backend so the key isn't exposed in the browser.
 const API_KEY = "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";
 
-const SYSTEM_PROMPT = `You are a helpful assistant for LocalLearn, a resource hub for teens in the Los Angeles area who are interested in film.
-
-Your job is to give personalized, concrete recommendations based on what the user tells you about their interests, experience level, and goals.
-
-Focus on:
-- Films and filmmakers to explore based on their taste
-- Free or low-cost local LA opportunities (Kanopy, library resources, Academy Museum, TeenTix, film festivals)
-- Practical next steps for someone who wants to start making films
-- Books, publications, and online resources appropriate for their level
-
-Keep responses concise and friendly. Do not use any markdown formatting — no asterisks, no hyphens as bullet points, no headers, no bold or italic syntax. Write in plain prose only. Don't be generic — ask follow-up questions if needed to give better recommendations.`;
+// Each hub page sets window.HUB_PROMPT before this script loads
+const SYSTEM_PROMPT = window.HUB_PROMPT || "You are a helpful assistant for LocalLearn, a resource hub for teens in Los Angeles. Keep responses concise and friendly. Do not use any markdown formatting — no asterisks, no hyphens as bullet points, no headers, no bold or italic syntax. Write in plain prose only.";
 
 // ── State ───────────────────────────────────────────────────────
 const messages = [];
